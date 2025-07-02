@@ -1,6 +1,6 @@
 # KQL Time Heist: Using the MarketLogs Dataset
 
-Welcome, time bandits! This `Readme.md` guides you through using the `MarketLogs_1929.csv` dataset to pull off your KQL time heist, as outlined in the blog post *KQL Time Heist: Stealing Insights from History*. With this dataset, you’ll query historical stock market data from October 1929 to steal insights and rewrite history—without tripping over a null value!
+Welcome, time bandits! This `Readme.md` guides you through using the `MarketLogs_1929.csv` dataset to pull off your KQL time heist, as outlined in the blog post [*KQL Time Heist: Stealing Insights from History*](https://rodtrent.substack.com/p/kql-time-heist-stealing-insights). With this dataset, you’ll query historical stock market data from October 1929 to steal insights and rewrite history—without tripping over a null value!
 
 ## Dataset Overview
 
@@ -37,7 +37,7 @@ To use this dataset with KQL, you’ll need:
 Follow these steps to load and query the dataset:
 
 1. **Download the Dataset**
-   - Grab `MarketLogs_1929.csv` from this repository or the blog post’s resources.
+   - Grab `MarketLogs_1929.csv` from this repository or the [blog post’s](https://rodtrent.substack.com/p/kql-time-heist-stealing-insights) resources.
    - Ensure the file is accessible in your working environment.
 
 2. **Ingest the Dataset into Kusto**
@@ -79,7 +79,7 @@ Follow these steps to load and query the dataset:
 
 ## Using the Dataset
 
-Now that your *Data Vault* is ready, use KQL to raid it! The blog post provides three challenges to get you started, but here’s how to approach querying the dataset generally:
+Now that your *Data Vault* is ready, use KQL to raid it! The [blog post](https://rodtrent.substack.com/p/kql-time-heist-stealing-insights) provides three challenges to get you started, but here’s how to approach querying the dataset generally:
 
 ### Example Queries
 1. **Find the Top Traded Stocks**
@@ -123,7 +123,7 @@ Now that your *Data Vault* is ready, use KQL to raid it! The blog post provides 
 
 ## Heist Log: Share Your Insights
 
-After running your queries, share your loot in the blog post’s *Heist Log*! Post your best KQL query, the insight you stole, and any hilarious blunders (e.g., “I typed `summarise` instead of `summarize` and got stuck in a 1920s speakeasy!”). Format your entry like this:
+After running your queries, share your loot in the [blog post’s](https://rodtrent.substack.com/p/kql-time-heist-stealing-insights) *Heist Log*! Post your best KQL query, the insight you stole, and any hilarious blunders (e.g., “I typed `summarise` instead of `summarize` and got stuck in a 1920s speakeasy!”). Format your entry like this:
 
 - **Query Used**: (Your KQL query)
 - **Insight Stolen**: (What you discovered)
@@ -134,7 +134,7 @@ After running your queries, share your loot in the blog post’s *Heist Log*! Po
 - **Ingestion Errors**: Ensure the CSV’s column headers match the table schema. Check for stray commas or quotes in the data.
 - **Query Fails**: Double-check syntax (e.g., `summarize`, not `summarise`). Use `| take 10` to inspect data for unexpected formats.
 - **No Results**: Verify the date range in `where` clauses. The dataset covers October 1–31, 1929, only.
-- **Need Help?**: Refer to the [Azure Data Explorer docs](https://docs.microsoft.com/en-us/azure/data-explorer/) or ping the blog post’s comment section.
+- **Need Help?**: Refer to the [Azure Data Explorer docs](https://docs.microsoft.com/en-us/azure/data-explorer/) or ping the [blog post’s](https://rodtrent.substack.com/p/kql-time-heist-stealing-insights) comment section.
 
 ## Ready to Heist?
 
